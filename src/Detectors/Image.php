@@ -20,7 +20,8 @@ class Image extends Detector
             ?: $metas->url('og:image', 'og:image:url', 'og:image:secure_url', 'twitter:image', 'twitter:image:src', 'lp:image')
             ?: $document->link('image_src')
             ?: $ld->url('image.url')
-            ?: $this->detectFromContentType();
+            ?: $this->detectFromContentType()
+            ?: $document->link('icon');
     }
 
     private function detectFromContentType()
