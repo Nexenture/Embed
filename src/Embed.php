@@ -18,12 +18,12 @@ class Embed
         $this->extractorFactory = $extractorFactory ?: new ExtractorFactory();
     }
 
-    public function get(string $url): Extractor
+    public function get(string $url, bool $followFirstConnexion = true): Extractor
     {
         $request = $this->crawler->createRequest('GET', $url);
         $response = $this->crawler->sendRequest($request);
 
-        return $this->extract($request, $response);
+        return $this->extract($request, $response, $followFirstConnexion);
     }
 
     /**
