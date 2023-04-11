@@ -6,7 +6,7 @@ return [
     'authorUrl' => null,
     'cms' => null,
     'code' => [
-        'html' => '<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7049026314158100480" frameborder="0" width="1280" height="720" allowTransparency="true"></iframe>',
+        'html' => '<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7049026314158100480?compact=true" frameborder="0" width="1280" height="720" allowTransparency="true"></iframe>',
         'width' => 1280,
         'height' => 720,
         'ratio' => 56.25

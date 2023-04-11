@@ -29,7 +29,7 @@ class Code extends Detector
         $width = $metas->int('twitter:player:width');
         $height = $metas->int('twitter:player:height');
 
-        $url = 'https://www.linkedin.com/embed/feed/update/urn:li:activity:'.$matches[1];
+        $url = 'https://www.linkedin.com/embed/feed/update/urn:li:activity:' . $matches[1] . '?compact=true';
 
         $code = html('iframe', [
             'src' => $url,
