@@ -6,10 +6,10 @@ return [
     'authorUrl' => null,
     'cms' => null,
     'code' => [
-        'html' => '<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7049026314158100480" frameborder="0" width="500" height="500" allowTransparency="true"></iframe>',
-        'width' => 500,
-        'height' => 500,
-        'ratio' => 100.0
+        'html' => '<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7049026314158100480" frameborder="0" width="1280" height="720" allowTransparency="true"></iframe>',
+        'width' => 1280,
+        'height' => 720,
+        'ratio' => 56.25
     ],
     'description' => 'Les métiers de la banque, de l’assurance, de la logistique et de l’informatique vous intéressent ? Et si vous pouviez rencontrer des recruteurs ? Le 25 avril…',
     'favicon' =>  'https://static.licdn.com/aero-v1/sc/h/al2o9zrvru7aqj8e1x2rzsrca',

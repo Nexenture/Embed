@@ -18,6 +18,7 @@ class Code extends Detector
     private function fallback(): ?EmbedCode
     {
         $uri = $this->extractor->getUri();
+        $metas = $this->extractor->getMetas();
 
         preg_match('/activity-(\d+)/', $uri->__toString(), $matches);
 
@@ -25,7 +26,8 @@ class Code extends Detector
             return null;
         }
 
-        $width = $height = 500;
+        $width = $metas->int('twitter:player:width');
+        $height = $metas->int('twitter:player:height');
 
         $url = 'https://www.linkedin.com/embed/feed/update/urn:li:activity:'.$matches[1];
 
