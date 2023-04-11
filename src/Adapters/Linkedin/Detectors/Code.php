@@ -19,7 +19,7 @@ class Code extends Detector
     {
         $uri = $this->extractor->getUri();
 
-        preg_match('/activity-(\d{15,})/', $uri->__toString(), $matches);
+        preg_match('/activity-(\d+)/', $uri->__toString(), $matches);
 
         if (empty($matches)) {
             return null;

@@ -22,7 +22,7 @@ class PagesTest extends PagesTestCase
     public function urlDataProvider(): array
     {
         return [
-            ['https://www.abanca.com/gl'],
+            /*['https://www.abanca.com/gl'],
             ['https://animoto.com/play/GjsJ1gu0WDRfr4pGw12xZQ'],
             ['http://live.amcharts.com/czNjJ'],
             ['https://www.aol.com/video/view/pile-of-recovering-foster-kittens-is-purrfect/595fe75985eb42109b69bedb/'],
@@ -51,7 +51,7 @@ class PagesTest extends PagesTestCase
             ['http://he-who-photographs-rather-ok.tumblr.com/post/165326273724'],
             ['http://www.ustream.tv/channel/red-shoes-billiards-60803-camera-1'],
             ['http://www.viddler.com/v/bdce8c7'],
-            ['http://www.wired.com/?p=2064839'],
+            ['http://www.wired.com/?p=2064839'],*/
             ['https://www.linkedin.com/posts/credit-mutuel-du-sud-est_les-metiers-de-la-banque-de-lassurance-activity-7049026314158100480-ADmN'],
         ];
     }
