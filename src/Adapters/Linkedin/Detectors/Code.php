@@ -17,6 +17,7 @@ class Code extends Detector
 
     private function fallback(): ?EmbedCode
     {
+        return null;
         $uri = $this->extractor->getUri();
         $metas = $this->extractor->getMetas();
 
