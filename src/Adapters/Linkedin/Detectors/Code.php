@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace Embed\Adapters\Github\Detectors;
+namespace Embed\Adapters\Linkedin\Detectors;
 
 use Embed\Detectors\Code as Detector;
 use Embed\EmbedCode;
@@ -18,17 +18,16 @@ class Code extends Detector
     private function fallback(): ?EmbedCode
     {
         $uri = $this->extractor->getUri();
-      
-        $metas = $this->extractor->getMetas();
 
-        $url = $metas->url('twitter:player');
+        preg_match('/activity-(\d{15,})/', $uri->__toString(), $matches);
 
-        if (!$url) {
+        if (empty($matches)) {
             return null;
         }
 
-        $width = $metas->int('twitter:player:width');
-        $height = $metas->int('twitter:player:height');
+        $width = $height = 500;
+
+        $url = 'https://www.linkedin.com/embed/feed/update/urn:li:activity:'.$matches[1];
 
         $code = html('iframe', [
             'src' => $url,

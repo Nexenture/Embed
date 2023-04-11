@@ -52,6 +52,7 @@ class PagesTest extends PagesTestCase
             ['http://www.ustream.tv/channel/red-shoes-billiards-60803-camera-1'],
             ['http://www.viddler.com/v/bdce8c7'],
             ['http://www.wired.com/?p=2064839'],
+            ['https://www.linkedin.com/posts/credit-mutuel-du-sud-est_les-metiers-de-la-banque-de-lassurance-activity-7049026314158100480-ADmN'],
         ];
     }
 

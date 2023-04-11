@@ -40,10 +40,13 @@ final class FileClient implements ClientInterface
         $uri = $request->getUri();
         $filename = $this->path.'/'.self::getFilename($uri);
 
+        //echo $uri;
+        //echo $filename;die;
+
         if ($this->mode < 1 && is_file($filename)) {
             $response = $this->readResponse($filename);
         } elseif ($this->mode === -1) {
-            throw new Exception("New unexpected request to {$uri}");
+            throw new Exception("New unexpected request to {$uri} {$filename}");
         } else {
             $response = $this->client->sendRequest($request);
         }
